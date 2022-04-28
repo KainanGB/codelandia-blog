@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --primary-bg-color: #574ae8;
+  --secondary-bg-color: #3ea1db;
+  --neutral-white1-color: #ffffff;
+  --neutral-white2-color: #f9f9f9;
+  --neutral-gray-color: #717171;
+  --neutral-dark-gray-color: #1a202c;
+  --font1: "Lexend Deca", sans-serif;
+  --font2: "Inter", sans-serif;
+}
+
+html {
+  font-family: var(--font1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  width: 74vw;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #574ae8, #3ea1db);
+}
+
+.header__body {
+  display: flex;
+  flex-direction: column;
+  height: 12em;
+}
+
+.header__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--neutral-white1-color);
+  margin-top: 1em;
+}
+
+.header__title {
+  margin: 0;
+}
+
+.header__searchBar {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--neutral-white1-color);
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  margin: auto;
+  /*padding: 0 1em;*/
+  border-radius: 0.4em;
+  width: 100%;
+}
+
+.header__searchIcon {
+  margin: 0 0.5em 0 1em;
+}
+
+.header__searchInput {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 1em 1em;
+  font-family: var(--font2);
+  color: var(--neutral-white1-color);
+}
+
+.header__searchInput::placeholder {
+  color: var(--neutral-white1-color);
+  opacity: 0.5;
+}
+
+.header__searchInput:focus {
+  outline: none;
+  color: var(--neutral-white1-color);
+}
+
+.header__searchInput::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--neutral-white2-color);
+}
+
+.cards {
+  margin-top: 1em;
+}
+
+.card {
+  background-color: var(--neutral-white1-color);
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.1);
+  border-radius: 0.4em;
+  padding: 1em;
+  margin: 2.5em 0;
+}
+
+.card__span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__date {
+  color: var(--neutral-gray-color);
+  font-size: 0.9em;
+}
+
+.card__like {
+  color: #574ae8;
+}
+
+.card__title {
+  color: var(--neutral-dark-gray-color);
+  font-weight: normal;
+}
+
+.card__paragraph {
+  color: var(--neutral-gray-color);
+}
